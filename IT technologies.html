@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="General_Style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Group 14">
-    <title>IT technologies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon (2).ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- May remove this later-->
+    <title>IT technologies </title>
+    <!-- change between dark and light mode -->
+    <script>
+         var theme = document.querySelector(":root");
+
+         function myFunction_mode() {
+            var another = getComputedStyle(theme)
+            if (another.getPropertyValue('--text_color') == 'black'){
+                theme.style.setProperty('--text_color', 'white')
+                theme.style.setProperty('--theme_color', '#121212');
+                document.getElementById("dark").innerHTML = "&#9789";
+            } else {
+                theme.style.setProperty('--text_color', 'black')
+                theme.style.setProperty('--theme_color', 'white');
+                document.getElementById("dark").innerHTML = "&#9728";
+            }
+         }
+    </script>
 </head>
 
-<body>
-    <a href="main.html"> Home </a>
-    <h1> Introduction </h1>
-    <p> Text here </p>
+<body style="overflow-x: hidden;">
+    <header> <!-- consider more &#129528-->
+    <p id="logo"> Group 14 </p> <br>
+    <button type="button" id="dark" onclick="myFunction_mode()" style="cursor:pointer" title="dark theme"> &#9728 </button>
     <nav>
+        <a href="main.html" style="width:8%;" title="Home page"> &#8962 &nbsp  Home </a>
         <a href="#bc">Blockchain and cryptocurrencies</a>
-        <a href="#ai">Artificial intelligence and machine learning</a>
+        <a href="#ai">AI and machine learning</a>
         <a href="#cy">Cybersecurity and privacy</a>
         <a href="#av">Autonomous vehicles</a>
     </nav>
+    </header>
+    <br> <br>
 
+    <article>
+    <h1 style="clear: left;"> Introduction </h1>
+    <p> Text here</p>
     <div id="bc">
         <h3>Blockchain and cryptocurrencies</h3>
         <p> Report here</p>
     </div>
     <div id="ai">
         <h3>Artificial intelligence and machine learning</h3>
-        <p> Report here</p>
+        <p> &nbsp In this session, I’m going to report on one of the most well-known and impactful technology in these days, which is Artificial intelligence and machine learning. This report will contain three parts, which includes the current ability of AI, the impact of AI on the community, and the impact of AI on personal view.
+        <br> &nbsp &nbsp Before going into details, we will look through some basic terms. First, what is Artificial Intelligence and Machine Learning. Artificial Intelligence, or AI for short, is a field of computer science which involves on how creating efficient model to do specific task that would require a specific code for specific task, like image recognition, playing chess. Machine learning, a sub field of AI, is about creating model and algorithm for computers to learn and make predictions base on the train data.  The ultimate goal of AI and Machine Learning is to create computers that are capable of doing complex task in minimal runtime, such as simulating fluid physics, writing essay, or analyzing the spread of a virus in pandemic.
+        <br> &nbsp &nbsp Firstly, AI is arguably one of the most used technology. On the market, it is one of the fastest growing fields. Fortune Business Insights (2021) have stated that the AI market has the value of 35.92 Billion USD in 2020, and expecting to hit 360.36 Billion USD by 2028, with investment from both large and small companies and cooperates. Its wide application may also be a contribution factor in growth, from the well-known usage like image recognition, face recognition on smartphones, pattern predicting for recommended videos on tiktok, to the less popular like cancer detection in hospital, generating pictures, or writing full essay from a simple text. The most popular programming language is currently Python (TIOBE 2021), and Python is also one of the most powerful programming language for AI and data model, which could be a factor in contributing to the popularity of AI. Nowadays, AI is popular in used and easy to implement thanks to language like Python and library like Tensorflow. In fact, it is so easy to used compare to the past that the race of using AI in the market really comes down to whoever have better data in both quality and quantity. The more quality data fetch to an AI model, the better the model will become, so companies try to acquire as much data as possible to be the leading company, stated by Ryszard Szopa (2019).
+        <br> &nbsp &nbsp Thanks to the rapid growth of technology, AI has become more powerful than ever before. In 2016, AlphaGo, a product of Deepmind, has successfully defeated the world champion in the game Go, which is said to be one of the most complicated game ever made. Beside logic and mathematics, Ai can also create art work, like the art “My son and me” created by Artistic style transfer, which base on deep learning (Ryszard Szopa, 2019). This artwork poses a series of controversial and worries among many people in the community. Even the building blocks of AI can now be used by AI, for example, like programming languages. Github has recently release the beta of Copilot, a software that can code with only a few lines of comments. This could revolutionize how software are created, and even well-known IT youtubers like Fireship (2021) think that this could potentially replace developers very soon in the future. This tool is powered by GPT-3, the AI model of OpenAI, which also powers Copilot. It is so powerful that it can recreate an entire essay in just a minutes, with surprising result and hard to differentiate to a human writing, though Will Douglas Heaven (2021) have stated that this model works on the input data and how to arrange it rather than actually being ‘smart’.
+        <br> &nbsp &nbsp It’s hard to predict the future, even in a 3-year time, since technology has become so advanced that it’s hard to predict the next trending topic or where will IT go next. In the fields of AI though, the ultimate goal is to create a general-purpose AI, though it’s still relatively far from achieving that (Russel 2021). This is the kind of AI that can learn any intricate task and master it just as human does or even much better. Although it is unknown to whether we can create this kind of AI, but we can definitely get a more powerful AI than today standard, like writing better paragraph, can simulate physics more realistic, or create a better VR, AR experiences for the users.
+        <br> &nbsp &nbsp Of course, all of these advancements would not possible without required technologies. And to get AI better, than it is a must that these technologies would also have to be better overtime. As have mentioned before, languages like Python, C++ or library like TensorFlow helps to develop AI, and technology like Big data to help collect data for advancing the model, cloud computing to provide the necessary power to compute all the AI algorithms. All of this has led to the birth of machine learning, or deep learning. And if these fields want to develop further, then personally, I think that all of these tools and technologies must advance with it, or even there could be a birth of entirely new technologies
+        <br> &nbsp &nbsp Secondly, the likely effect on the society will vary, with both good and bad impact. One of the best features about AI is that it will help to reduce repetitive work, improve efficiency of development in rapid time, which will result in the cut of cost and finance, enhance users’ experiences. Jane Collingwood (2021) has written an article on it’s possible to use machine learning to aid in detecting lung cancer in health care, which would result in better prediction and saving time and cost. However, there are concerns with these benefits. One of which is that AI is notoriously known for its unpredictability, which could have fatal real-world consequence if not controlled properly. The Uber car accident, which had led to fatal accident, is just one of many examples for that (Rory 2020).
+        <br> &nbsp &nbsp Another thing that worth mentioning is that it is very easy to trick people to trust something. An experiment in which a cute decorated AI robot can easily pass between people to get into other areas. Imagine what happened if that robot can dangerous computer virus or steal sensitive information without being noticed (Kacie Kinzer 2009). The effect will most likely on every person in the world. Beside mentioned benefits, AI will give rise to automation, which could reduce cost as have said, but may also take away jobs. Not only that, as AI get more advance, it may could replace more advanced job, like landing aircrafts, making prediction in finance, coding complex programs, since at the end, complicated works are just a collection of simple, repetitive tasks, told by Kurzgesagt – In a Nutshell (2017).
+        <br> &nbsp &nbsp The impact may vary from person to person, but for me personally, I think that it has already happened without my attention. AI has been used to suggest videos base on my past experiences on YouTube platform. I also used deep learning algorithm in my study, specifically in translating text to Vietnamese and in writing essay to detect minor in grammar and vocabulary. After all, as I get to work in more professional environment in university, the appearance of AI can be more clearly visible to me. All of these tools are generally helpful and have positive impact to my study and my overall daily life. Personally, I think that in the future, I will use even more AI powered tools to not only aid in my study, but also in career as well. This could be an opportunity for me, but I also have some worries if my job will be taken away as a result intricate and powerful AI. But in the end, I don’t think I should worry that much, and rather focusing on what I can do and how would I like to become.
+        <br> &nbsp &nbsp Beside myself, the influence these technologies on my friends and family may well be as significant, or even greater, compare to myself. Majority of my friends already used AI tools like Grammarly, regardless of what major they are in, like logistics, finance, engineer, and so on, with positive reviews and feedbacks about the tools. Even my parents, who are not so interested in technologies or online shopping. However, during the pandemic, when almost everything was moved to online, and thanks to recommended algorithms, they have said that their experiences are much better than they have expected. So in conclusion, whoever a person be or whatever him or her do, AI will always be there, and the impact will just grow larger from time to time, and only time will time if it’s going to be a good idea or not.
+        </p>
     </div>
     <div id="cy">
         <h3>Cybersecurity and privacy</h3>
-        <p> Report here</p>
+        <p> Report here </p>
     </div>
     <div id="av">
         <h3>Autonomous vehicles</h3>
         <p> Report here</p>
     </div>
-    <footer>
-        <a href="IT work.html"> <<< </a>
-        <a href="Project ideas.html"> >>> </a>
+    </article>
+    <hr>
+    <footer style="background-color: red;">
+    <a href="IT work.html"> <<< </a>
+    <a href="Project ideas.html"> >>> </a>
     </footer>
 </body>
 </html>
+

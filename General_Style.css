@@ -1,0 +1,93 @@
+:root{
+--text_color: black;
+--theme_color: white;
+/*blue: #1e90ff; */
+}
+
+/* dark mode (maybe done?) normal unicode icon, animation until scroll (fail)yu, favicon, synchronize */
+* {
+    background-color: var(--theme_color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: sticky;
+    padding-top: 10px;
+    top: 0;
+    background: var(--theme_color);
+}
+
+#dark {
+    position: absolute;
+    background: #D3D3D3;
+    width: 30px;
+    height: 40px;
+    border: 0;
+    font-size: 20px;
+    top: 5px;
+    right:10px;
+
+}
+
+#logo {
+    display: inline;
+    width: 20%;
+    text-align: left;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    background: linear-gradient(blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* nav {position: sticky; top: 0} nav bar sticky only, currently using header sticky*/
+
+nav a{
+    display: inline;
+    background-color: var(--text_color);
+    color: var(--theme_color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    text-decoration: none;
+    width: 23%;
+    text-align: center;
+}
+
+nav a:hover {
+    background: gray;
+}
+
+article {
+    display: block;
+    width: 70%;
+    padding-top: 10px;
+    margin: auto;
+    animation: fade 2s linear;
+    color: var(--text_color);
+}
+
+@keyframes fade {
+    from {
+        color: var(--theme_color);
+        padding-top: 30px;
+    }
+
+    to {
+        color: var(--text_color);
+        padding-top: 10px;
+    }
+}
+
+article div {padding: 80px;}
+
+footer a{
+    float: right;
+    text-decoration: none;
+    font-size: 50px;
+    color: #1e90ff;
+    transition: font-size 0.5s;
+}
+footer a:first-child {float: left;}
+footer a:hover {font-size: 60px;}
