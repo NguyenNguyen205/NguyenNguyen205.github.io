@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="General_Style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Group 14">
-    <title>IT work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon (2).ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>IT Works </title>
+    <!-- change between dark and light mode -->
+    <script>
+         var theme = document.querySelector(":root");
+
+         function myFunction_mode() {
+            var another = getComputedStyle(theme)
+            if (another.getPropertyValue('--text_color') == 'black'){
+                theme.style.setProperty('--text_color', 'white')
+                theme.style.setProperty('--theme_color', '#121212');
+                document.getElementById("dark").innerHTML = "&#9789";
+            } else {
+                theme.style.setProperty('--text_color', 'black')
+                theme.style.setProperty('--theme_color', 'white');
+                document.getElementById("dark").innerHTML = "&#9728";
+            }
+         }
+    </script>
 </head>
-<body>
-    <a href="main.html">Home</a>
+<body style="overflow-x: hidden;">
+<header style="z-index: 100;">
+    <p id="logo"> Group 14</p> <br>
+    <button type="button" id="dark" onclick="myFunction_mode()" style="cursor:pointer" title="dark theme"> &#9728 </button>
+    <nav>
+        <a href="main.html" style="width:8%;" title="Home page"> &nbsp  Home </a>
+        <a href="#video" style="width:46%;">Video</a>
+        <a href="#transcript" style="width: 46%;">Transcript</a>
+    </nav>
+
+</header>
+<br> <br>
+<article>
+
     <h1> Introduction </h1>
-    <h2> Video </h2>
-    <video width="50%" height="400" controls>
-        <!-- <source src="" type=""> -->
-        Sorry, the video is unavailable now &#9785
-    </video>
-    <h2> Transcript </h2>
+    <p> &nbsp &nbsp In these days, the IT field is a large market with many job opportunities for new comers to join. However, there is still a lot questions regarding about the market, and most of the answers to those we found were vague and didn’t explain a lot. In order to overcome this, we have decided to interview an IT professional to know more about the behind the scenes of the IT works, how it has changed, and what lies ahead in the future. </p>
+    <div id="video">
+        <h2> Video </h2>
+        <video width="70%" height="400" controls style="margin-left: 150px;">
+            <!-- <source src="" type=""> -->
+            Sorry, the video is unavailable now &#9785
+        </video>
+    </div>
     <div>
+    <h2 id="transcript"> Transcript </h2>
         <p> <b>Interviewer</b>:  Text here </p>
     </div>
-    <footer>
-        <a href="main.html"> <<< </a>
-        <a href="IT technologies.html"> >>> </a>
-    </footer>
+</article>
+<hr>
+<footer style="background-color: red;">
+    <a href="main.html"> <<< </a>
+    <a href="IT technologies.html"> >>> </a>
+</footer>
 </body>
+
 </html>

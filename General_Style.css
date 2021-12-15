@@ -1,10 +1,8 @@
 :root{
 --text_color: black;
 --theme_color: white;
-/*blue: #1e90ff; */
 }
 
-/* dark mode (maybe done?) normal unicode icon, animation until scroll (fail)yu, favicon, synchronize */
 * {
     background-color: var(--theme_color);
     font-family: 'Open Sans', sans-serif;
@@ -19,14 +17,13 @@ header {
 
 #dark {
     position: absolute;
-    background: #D3D3D3;
     width: 30px;
     height: 40px;
     border: 0;
     font-size: 20px;
     top: 5px;
     right:10px;
-
+    color: var(--text_color);
 }
 
 #logo {
@@ -91,3 +88,5 @@ footer a{
 }
 footer a:first-child {float: left;}
 footer a:hover {font-size: 60px;}
+
+#outsider{font-size: 30px;}

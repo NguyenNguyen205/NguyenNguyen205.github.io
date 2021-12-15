@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="General_Style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Group 14">
-    <title>Project ideas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon (2).ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- May remove this later-->
+    <title>Project idea </title>
+    <!-- change between dark and light mode -->
+    <script>
+         var theme = document.querySelector(":root");
+
+         function myFunction_mode() {
+            var another = getComputedStyle(theme)
+            if (another.getPropertyValue('--text_color') == 'black'){
+                theme.style.setProperty('--text_color', 'white')
+                theme.style.setProperty('--theme_color', '#121212');
+                document.getElementById("dark").innerHTML = "&#9789";
+            } else {
+                theme.style.setProperty('--text_color', 'black')
+                theme.style.setProperty('--theme_color', 'white');
+                document.getElementById("dark").innerHTML = "&#9728";
+            }
+         }
+    </script>
 </head>
-<body>
-    <a href="main.html">Home</a>
+<body style="overflow-x: hidden;">
+<header>
+    <p id="logo"> Group 14</p> <br>
+    <button type="button" id="dark" onclick="myFunction_mode()" style="cursor:pointer" title="dark theme"> &#9728 </button>
+    <nav>
+        <a href="main.html" style="width:8%;" title="Home page"> &#8962 &nbsp  Home </a>
+    </nav>
+</header>
+<br> <br>
+<article>
     <h1> Introduction </h1>
-    <p> Text here </p>
-    <h2> Project ideas </h2>
-    <footer>
-        <a href="IT work.html"> <<< </a>
-    </footer>
+    <p> &nbsp &nbsp At RMIT, and even in business and professional environments, teamwork is an essential soft skill to have in order to gain high performance and have better final result. Acknowledging this, our team want to provide a tool that can help RMIT students to recruit teammate during an assignment or project as efficiently as possible and also helping students to be more active in finding teammates so that they can have their expected final results. So we have come up with a project idea to tackle the situation</p>
+    <div>
+        <h2> Project ideas </h2>
+    </div>
+</article>
+<hr>
+<footer style="background-color: red;">
+    <a href="IT technologies.html"> <<< </a>
+    <a href="Forms for feedback.html" id="outsider">Forms for Feedback</a>
+</footer>
 </body>
 </html>
